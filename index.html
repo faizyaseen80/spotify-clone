@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container d-flex">
+        <div class="sidebar d-flex">
+            <div class="top">
+                <img class="cross pointer" src="/images/cross.svg" alt="">
+                <ul class="d-flex justify-center font-family">
+                    <li><a><img class="logo" src="/images/logo.svg" alt=""></a></li>
+                    <li class="home"><a href="/"><img src="/images/home.svg" alt=""> Home</a></li>
+                    <li class="search"><a href="/"><img src="/images/search.svg" alt=""> Search</a></li>
+                </ul>
+            </div>
+            <div class="bottom d-flex justify-between ">
+                <div>
+                <div class="first d-flex justify-between align-center">
+                <div class="library d-flex align-center font-family">
+                <img src="/images/library.svg" alt="">
+                <p>Your Library</p>
+                </div>
+                <div>
+                    <img class="add" src="/images/add.svg" alt="">
+                </div>
+            </div>
+            <div class="songList font-family">
+                <ul class="pointer">
+                    
+                </ul>
+            </div>
+        </div>
+            <div class="second">
+                <ul class="d-flex align-center font-family">
+                    <li>Legal</li>
+                    <li>Sefty & Privacy Center</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies</li>
+                    <li>About Ads</li>
+                    <li>Accessibility</li>
+                    <li>Cookies</li>
+                </ul>
+                <button class="d-flex align-center font-family"><img src="/images/globel.svg" alt="">English</button>
+            </div>
+        </div>
+        </div>
+        <main class="main d-flex align-center ">
+            <header class="header d-flex justify-between align-center">
+                <div class="controll d-flex">
+                    <img class="hamburg pointer" src="/images/hamburg.svg" alt="">
+                    <img class="pointer" src="/images/prevlib.svg" alt="">
+                    <img class="pointer" src="/images/nextlib.svg" alt="">
+                    
+                </div>
+                <div class="auth">
+                    <button class="btn btn-signup font-family pointer">Sign up</button>
+                    <button class="btn btn-login font-family pointer">Log in</button>
+                </div>
+            </header>
+            <div class="albums font-family">
+                <h2>Popular albums</h2>
+                <div class="card-container d-flex justify-center">
+                    
+                </div>
+                
+            </div>
+            <div class="playBar d-flex align-center justify-center">
+                <div class="song-detail d-flex justify-between">
+                    <div class="current-song-name"></div>
+                    <div class="songButton d-flex">
+                        <img id="prev" class="pointer" src="/images/prevsong.svg" alt="Previous">
+                        <img id="play" class="pointer" src="/images/playsong.svg" alt="Play/Pause">
+                        <img id="next" class="pointer" src="/images/nextsong.svg" alt="Next">
+                    </div>
+                    <div class="d-flex justify-between align-center timevol">
+                        <div class="song-time">00:00 / 00:00</div>
+                        <img class="volume pointer" src="/images/volume.svg" alt="Volume">
+                        <input type="range" name="volume" min="0" max="1" value="1" step="0.01" class="range pointer">
+                    </div>
+                </div>
+                <div class="seekbar pointer d-flex">
+                    <div class="circle pointer"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
